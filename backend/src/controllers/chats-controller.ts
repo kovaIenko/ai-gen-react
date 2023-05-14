@@ -18,7 +18,7 @@ router.get('/getall', async (req: Request, res: Response) => {
 
   const authToken = auth?.split(" ")[1];
 
-  //console.log(authToken)
+  console.log(authToken)
  
   const ticket = await verifyToken(authToken+"");
   const email = ticket.email;
